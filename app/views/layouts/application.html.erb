@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mailer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <style>
+  	body{
+  		width: 900px;
+  	} 
+  	.all{
+  		width: 900px; 
+  		height: 1000px; 
+  	} 
+  	.meio{ 
+  		height: 614px;
+  		width: 900px;
+  	} 
+  	banner{
+  		height: 112px;
+  		width: 900px;
+  		text-align: center;
+  	}
+  	footer{
+  		width: 900px;
+  		height: 274px;
+  	}
+  	.button{
+  		padding-left: 20px;
+  		padding-right: 20px;
+  		padding-top: 10px;
+  		padding-bottom: 10px;
+  		border: solid #000 1px;color:#000;
+  	}
+  	a.button{
+  		text-decoration: none !important;
+  	}
+  	a.button:hover{
+  		border: solid blue 1px;
+  		color: blue;
+  	}
+  	.detalhes{
+  		padding-left: 20px;
+  	}
+  	.title{
+  		width: 858px;
+  		color: #000;
+  		border: solid #C9C9C9 1px;
+  		margin-bottom: 20px;
+  	}
+  	.space{
+  		padding-left: 20px;
+  		padding-right: 20px;
+  	}
+  	span.space{
+  		font-weight: bold;
+  	}
+  </style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

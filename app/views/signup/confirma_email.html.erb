@@ -1,0 +1,38 @@
+<p>
+	<div class='all'>
+		<div class='banner'>
+			<img border='0' src='http://www.grupoapta.net.br/docmail/imagens/logo.png' alt='Footer Multiplay' width='364' height='112'>
+		</div>
+		<div class='meio'>
+			<br />
+			<h1 class='space'><%= @cliente.nome %></h1>
+			<p class='space'>Estamos enviando o detalhamento de sua fatura.<br/>
+			Se o seu pagamento é em forma de boleto bancário basta clicar no link no final do e-mail e emitir sua fatura para pagamento em qualquer banco.<br/>
+			Se o seu pagamento é em forma de débito automático fique atento para conferir apenas se o valor foi debitado corretamente de sua conta corrente.</p>
+			<div class='title space'>
+				<br/>
+				<span class='space'>E PARA FACILITAR AINDA MAIS, SEGUE UM PEQUENO RESUMO COM AS PRINCIPAIS INFORMAÇÔES DA</span>
+				<br/>
+				<span class='space'>SUA FATURA:</span>
+				<p class='detalhes'>Contrato: <%= @cliente.contrato %></p>
+				<p class='detalhes'>Valor: R$<%= @cliente.valor%></p>
+				<p class='detalhes'>Data de vencimento: <%= @cliente.vencimento %></p>
+			</div>
+			<div class='title space'>
+				<br/>
+				<span class='space'>SOLICITE A FATURA DIGITAL E TENHA MUITO MAIS VANTAGENS NO SEU DIA A DIA:</span>
+				<ul>
+					<li>Só você tem acesso à sua fatura.</li>
+					<li>É possível acessá-la quando e onde quiser.</li>
+					<li>Fica muito mais fácil organizar suas contas no mesmo lugar.</li>
+				</ul>
+			</div>
+			<p class='space'>Clique no Link abaixo e visualize sua fatura</p>
+			<br/>
+			<a class='button space' href='$URL' />Gerar Fatura</a>
+		</div>
+		<div class='footer'>
+			<img border='0' src='http://www.grupoapta.net.br/docmail/imagens/footer.png' alt='Footer Multiplay' width='900' height='274'>
+		</div>
+	</div>
+</p>
